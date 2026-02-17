@@ -152,7 +152,7 @@ class ConnectFourEnv:
                     threes += 1
 
 
-        # give negative reward if four is possible after move Not done yet
+        # give negative reward if four is possible for opp after move 
         # Horizontal
         opp_win = False
         for r in range(6):
