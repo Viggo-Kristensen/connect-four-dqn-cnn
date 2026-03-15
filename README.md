@@ -1,4 +1,3 @@
-The Model
 This project aims to build an AI agent that plays Connect Four using Deep Q-Learning.
 The model’s input consists of two 7×6 Connect Four grids represented as binary maps. In the first map, a value of 1 indicates positions occupied by the agent’s pieces, while 0 represents empty or opponent positions. In the second map, 1 indicates the opponent’s pieces and 0 represents all other positions.
 
