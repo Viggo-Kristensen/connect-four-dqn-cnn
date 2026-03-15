@@ -1,8 +1,7 @@
-This project is my attempt at creating an AI for connect four using Deep Q-learning. 
-
 The Model
+This project aims to build an AI agent that plays Connect Four using Deep Q-Learning.
+The model’s input consists of two 7×6 Connect Four grids represented as binary maps. In the first map, a value of 1 indicates positions occupied by the agent’s pieces, while 0 represents empty or opponent positions. In the second map, 1 indicates the opponent’s pieces and 0 represents all other positions.
 
-The input layer for the model consists of two 7x6 connect four grids which each are a binary map. In the first binary map 1's denote the slots where the agents pieces are where as in the other 1's denote the placement of opponents pieces. These two binary maps are then passed through 3x3 filters through 3 CNN-layers. After this there are a couple linear layers which then outputs 7 Q-values where the ith Q value denotes the value of placing a piece in the ith column.
-
-
-
+These two binary maps are processed through three convolutional neural network (CNN) layers using 3×3 filters to extract spatial patterns and relationships on the board. The resulting feature representations are then passed through several fully connected (linear) layers.
+Finally, the network outputs seven Q-values, corresponding to the seven possible columns in the Connect Four board. The 
+i-th Q-value represents the estimated value (expected future reward) of placing a piece in column i
